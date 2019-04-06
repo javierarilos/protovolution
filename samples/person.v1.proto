@@ -9,5 +9,4 @@ message Person {
     uint32 id = 2;
     uint32 age = 3;
     uint32 telephone_number = 4;
-    repeated uint32 friends = 5;
 }
