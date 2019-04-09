@@ -18,9 +18,9 @@ public class ProtoDescriptorPlayground {
         FileDescriptorSet personV2FileDescriptorSet = FileDescriptorSet.parseFrom(personV2Bytes);
 
         FieldDescriptorProto field3PersonV1 = personV1FileDescriptorSet.getFile(0)
-                .getMessageTypeList().get(0).getFieldList().get(2);
+                .getMessageType(0).getField(2);
         FieldDescriptorProto field3PersonV2 = personV2FileDescriptorSet.getFile(0)
-                .getMessageTypeList().get(0).getFieldList().get(2);
+                .getMessageType(0).getField(2);
 
 
 
